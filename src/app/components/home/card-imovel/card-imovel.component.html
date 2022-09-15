@@ -1,0 +1,10 @@
+<div class="div-card" *ngFor="let imovel of imoveis">
+          <span>Titulo: {{imovel.nome}}</span>
+          <span>Area: {{imovel.area}}</span>
+          <span>Banheiros: {{imovel.banheiros}}</span>
+          <span>Condominio: {{imovel.condominio | currency: 'BRL'}}</span>
+          <span>Data Anuncio: {{imovel.dataAnuncio | date : 'dd/MM/yyyy'}}</span>
+          <span>Mobiliado: {{imovel.mobiliado ? 'Sim' : 'Não'}}</span>
+          <span>Quartos: {{imovel.quartos}}</span>
+          <span>Valor: {{imovel.valor | currency: 'BRL'}}</span>
+</div>

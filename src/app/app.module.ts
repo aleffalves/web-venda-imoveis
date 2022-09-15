@@ -1,16 +1,30 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule }  from '@angular/common/http';
+import { CardImovelComponent } from './components/home/card-imovel/card-imovel.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { CurrencyPipe, DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CardImovelComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatInputModule,
+    FormsModule,
+    MatFormFieldModule,
+    DatePipe,
+    CurrencyPipe
   ],
   providers: [],
   bootstrap: [AppComponent]

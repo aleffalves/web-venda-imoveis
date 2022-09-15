@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "web-venda-imoveis"
+  "cli": {
+    "analytics": false
+  }
 }
